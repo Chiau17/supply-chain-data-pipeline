@@ -1,0 +1,17 @@
+version: 2
+models:
+  - name: fct_customer_lifetime_value
+    description: "each customer facts"
+    columns:
+      - name: user_id
+        tests:
+          - unique
+          - not_null
+  
+  - name: fct_product_performance
+    description: "each prodcut perforamce"
+    columns:
+      - name: product_id
+        tests:
+          - unique
+          - not_null
